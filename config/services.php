@@ -30,4 +30,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'sample_market' => [
+        'url' => env('SAMPLE_MARKET_URL'),
+        'api_key' => env('SAMPLE_MARKET_API_KEY'),
+    ],
+
 ];

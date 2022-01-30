@@ -98,8 +98,8 @@ class OrderRepository extends BaseRepository implements OrderRepositoryInterface
             $res = $this->mainMarketPlaceService->updateOrderType($order, ["type" => "approved"]);
         } while (!$res);
 
-        $order->update([
-            'type' => "approved"
-        ]);
+        $order->update(
+            $res
+        );
     }
 }

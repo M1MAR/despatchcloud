@@ -15,9 +15,9 @@
 - git clone https://github.com/M1MAR/despatchcloud.git
 - cd despatchcloud
 - npm install
-- composer install
 - sudo cp .env.example .env
 - edit db user, api key and api url in .env
+- composer install
 - php artisan migrate
 
 ## RUN

@@ -19,8 +19,8 @@ class CreateOrderProductTable extends Migration
             $table->unsignedBigInteger("product_id")->index();
             $table->unsignedInteger("quantity")->nullable();
             $table->unsignedDouble("subtotal",13,2)->nullable();
-            $table->timestamp("created_at");
-            $table->timestamp("updated_at")->nullable();
+            $table->string("created_at");
+            $table->string("updated_at")->nullable();
 
             $table->foreign('order_id')->references('id')->on('orders');
             $table->foreign('product_id')->references('id')->on('products');

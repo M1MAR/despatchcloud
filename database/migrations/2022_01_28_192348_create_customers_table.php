@@ -18,8 +18,8 @@ class CreateCustomersTable extends Migration
             $table->string("name");
             $table->string("email")->nullable();
             $table->string("phone")->nullable();
-            $table->timestamp("created_at");
-            $table->timestamp("updated_at")->nullable();
+            $table->string("created_at");
+            $table->string("updated_at")->nullable();
         });
     }
 

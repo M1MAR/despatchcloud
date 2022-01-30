@@ -20,8 +20,8 @@ class CreateProductsTable extends Migration
             $table->string("image")->nullable();
             $table->string("sku");
             $table->string("price");
-            $table->string("created_at");
-            $table->string("updated_at")->nullable();
+            $table->timestamp("created_at")->nullable();
+            $table->timestamp("updated_at")->nullable();
         });
     }
 

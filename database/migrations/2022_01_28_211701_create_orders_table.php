@@ -23,8 +23,8 @@ class CreateOrdersTable extends Migration
             $table->unsignedBigInteger("billing_address_id")->nullable();
             $table->unsignedBigInteger("shipping_address_id")->nullable();
             $table->string("total");
-            $table->string("created_at");
-            $table->string("updated_at")->nullable();
+            $table->timestamp("created_at")->nullable();
+            $table->timestamp("updated_at")->nullable();
 
             $table->foreign('customer_id')->references('id')->on('customers');
             $table->foreign('billing_address_id')->references('id')->on('addresses');

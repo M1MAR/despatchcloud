@@ -16,8 +16,8 @@
 - cd despatchcloud
 - npm install
 - composer install
-- php artisan key:generate
 - sudo cp .env.example .env
+- edit db user, api key and api url in .env
 - php artisan migrate
 
 ## RUN

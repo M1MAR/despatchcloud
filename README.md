@@ -16,7 +16,8 @@
 - cd despatchcloud
 - npm install
 - sudo cp .env.example .env
-- edit db user, api key and api url in .env
+- edit db user, api key and api endpoint in .env, like<br>
+SAMPLE_MARKET_URL=https://yoursite.uk/api
 - composer install
 - php artisan migrate
 
